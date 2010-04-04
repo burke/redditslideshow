@@ -1,0 +1,46 @@
+		*{
+			margin:0;
+			padding:0;
+		}
+		a{
+			color:#8FC2FF;
+			text-decoration: none;
+			outline: none;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+		img{
+			border:none;
+		}
+		body {
+			overflow:hidden;/*Needed to eliminate scrollbars*/
+			background:#000;
+		}
+		/*Supersize Plugin Styles*/
+		#loading {
+			position: absolute;
+			top: 49.5%; 
+			left: 49.5%;
+			z-index: 3;
+			width: 24px; 
+			height: 24px;
+			text-indent: -999em;
+			background-image: url(images/progress.gif);
+		}
+		#supersize{
+			position:fixed;
+		}
+		#supersize img, #supersize a{
+			height:100%;
+			width:100%;
+			position:absolute;
+			z-index: 0;
+		}
+		#supersize .prevslide, #supersize .prevslide img{
+			z-index: 1;
+		}
+		#supersize .activeslide, #supersize .activeslide img{
+			z-index: 2;
+		}
+		
