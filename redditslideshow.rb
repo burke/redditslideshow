@@ -11,7 +11,7 @@ def make_slideshow
     fetch('children').
     map{|e|e['data']}.
     select{|e|%{gif jpg png}.include? e['url'][-3..-1]}.
-    map{|x|"<a href='#{x['permalink']}'><img src='#{x['url']}' title='#{x['title']}'/></a>"}.
+    map{|x|"<a href='http://reddit.com#{x['permalink']}'><img src='#{x['url']}' title='#{x['title']}'/></a>"}.
     join("\n")
 end
 
